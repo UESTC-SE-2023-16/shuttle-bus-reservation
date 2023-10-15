@@ -1,18 +1,18 @@
 [tool.poetry]
-name = "Project Name"
+name = "Shuttle-Bus-Reservation-System"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "又一个校车预约系统课设警告"
+authors = ["AzideCupric <rukuy@qq.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = ""
-repository = ""
-documentation = ""
+homepage = "https://github.com/UESTC-SE-2023-16/shuttle-bus-reservation"
+repository = "https://github.com/UESTC-SE-2023-16/shuttle-bus-reservation"
+documentation = "https://github.com/UESTC-SE-2023-16/shuttle-bus-reservation/README.md"
 keywords = []
 classifiers = []
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.0.275"
@@ -22,15 +22,16 @@ nonemoji = "^0.1.2"
 pre-commit = "^3.1.0"
 
 [tool.black]
-line-length = 88
-target-version = ["py38", "py39", "py310", "py311"]
+line-length = 120
+target-version = ["py310", "py311"]
 include = '\.pyi?$'
 extend-exclude = '''
 '''
 
 [tool.isort]
 profile = "black"
-line_length = 88
+line_length = 120
+preview = true
 length_sort = true
 skip_gitignore = true
 force_sort_within_sections = true
@@ -40,8 +41,8 @@ extra_standard_library = ["typing_extensions"]
 select = ["E", "W", "F", "UP", "C", "T", "PYI", "PT", "Q"]
 ignore = ["C901"]
 
-line-length = 88
-target-version = "py38"
+line-length = 120
+target-version = "py310"
 
 [tool.ruff.flake8-pytest-style]
 fixture-parentheses = false
